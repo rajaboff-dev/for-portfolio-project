@@ -10,18 +10,12 @@ bar.addEventListener('click', () => {
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(Draggable, InertiaPlugin, TextPlugin);
-
-    Draggable.create(".draggable", {
-        bounds: document.getElementById('home'),
-        inertia: true,
-    });
+    gsap.registerPlugin(TextPlugin);
     gsap.to(".main-text", {
         duration: 1,
         text: "Rajaboff",
         ease: "none",
     });
-    gsap.config({trialWarn: false})
 });
 
 if(window.scrollY > 3){

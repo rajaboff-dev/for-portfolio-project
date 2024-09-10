@@ -209,7 +209,3 @@ main #home h1{
     -o-text-stroke: 1px #000;
     color: transparent;
 }
-
-.draggable{
-  z-index: 1;
-}
