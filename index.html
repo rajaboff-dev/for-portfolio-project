@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -33,18 +35,112 @@
                 <span class="bar-lines"></span>
                 <span class="bar-lines"></span>
             </div>
-            <button>Get Started</button>
+            <div class="buttons">
+                <button>Get Started</button>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h1 class="main-text"></h1>
+            <h1 class="main-text">
+                <span>R</span>
+                <span>a</span>
+                <span>j</span>
+                <span>a</span>
+                <span>b</span>
+                <span>o</span>
+                <span>f</span>
+                <span>f</span>
+            </h1>
+        </section>
+        <section id="about">
+            <div class="about-text">
+                <h1><span>A</span>bout <span>M</span>e</h1>
+                <p>My name is <b><span>A</span>sadbek</b> and I am a web developer.I'm 16 years old and I live in <em>Uzbekistan, Khorezm</em>.I'm interesting in <b>DSA(Data Structures and Algorithms)</b> and <b>web development.</b></p>
+                <div class="skills">
+                    <div class="skill">
+                        <label for="html">HTML</label>
+                        <progress id="html" value="50" max="100"></progress>
+                    </div>
+                    <div class="skill">
+                        <label for="css">CSS</label>
+                        <progress id="css" value="60" max="100"></progress>
+                    </div>
+                    <div class="skill">
+                        <label for="js">JS</label>
+                        <progress id="js" value="10" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3V5JTIwaW4lMjBibGFjayUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D" alt="my-image">
+            </div>
+        </section>
+        <section id="projects">
+            <h1>My <span>P</span>rojects</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="https://smith.queensu.ca/insight/images/cover/selfmanagingteams_800x449.jpg" alt="">
+                    <div class="project-card-main">
+                        <h1>Simple Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <a href="https://homework-tailwind-project.vercel.app/" target="_blank"><button>Visit <i class="fa-solid fa-square-up-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://smith.queensu.ca/insight/images/cover/selfmanagingteams_800x449.jpg" alt="">
+                    <div class="project-card-main">
+                        <h1>Tic Tac Toe Game</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <a href="https://tic-tac-toe-game-nine-woad.vercel.app/" target="_blank"><button>Visit <i class="fa-solid fa-square-up-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://smith.queensu.ca/insight/images/cover/selfmanagingteams_800x449.jpg" alt="">
+                    <div class="project-card-main">
+                        <h1>Simple Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <a href="https://for-exam-project.vercel.app/" target="_blank"><button>Visit <i class="fa-solid fa-square-up-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://smith.queensu.ca/insight/images/cover/selfmanagingteams_800x449.jpg" alt="">
+                    <div class="project-card-main">
+                        <h1>Todo App</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <a href="https://small-todo-app.vercel.app/" target="_blank"><button>Visit <i class="fa-solid fa-square-up-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://smith.queensu.ca/insight/images/cover/selfmanagingteams_800x449.jpg" alt="">
+                    <div class="project-card-main">
+                        <h1>Mini Fruits E-commerce</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <a href="https://fruits-ecommerce-project.vercel.app/" target="_blank"><button>Visit <i class="fa-solid fa-square-up-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://smith.queensu.ca/insight/images/cover/selfmanagingteams_800x449.jpg" alt="">
+                    <div class="project-card-main">
+                        <h1>Simple Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <a href="https://test-blush-seven-39.vercel.app/" target="_blank"><button>Visit <i class="fa-solid fa-square-up-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-icons">
+                <a href="https://t.me/qwertyNoName" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://instagram.com/rajaboff37" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/rajaboff-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="./app.js"></script>
 </body>
 
